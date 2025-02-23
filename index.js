@@ -17,8 +17,8 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/api/users/register", (req, res) => {
-  // Registration logic here
-  res.send("User registered successfully");
+  res.send("User registered successfully.");
+
 });
 
 app.post("/api/users/login", (req, res) => {
@@ -26,7 +26,7 @@ app.post("/api/users/login", (req, res) => {
   res.send("User successfully login");
 });
 
-// Connect to MongoDB
+// Connect to MongoDB 
 mongoose
   .connect(process.env.MONGO_URI, {
     // useNewUrlParser: true,
