@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const userRouter = require("./routers/userRouters");
 const shipmentRouter = require("./routers/shipmentRouters");
+require("dotenv").config();
 
 // Load environment variables
 dotenv.config();
